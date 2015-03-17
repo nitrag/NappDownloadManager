@@ -116,6 +116,10 @@ All events send an object of the download information.  Example of event handler
 ### deleteItem
 
 	NappDownloadManager.deleteItem('http://host/file');
+> 
+> Even though it is a url, this will delete an already downloaded file from the filesystem. So do NOT call it in the complete event listener.
+
+
 
 ### getDownloadInfo
 
